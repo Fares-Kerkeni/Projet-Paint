@@ -1,0 +1,180 @@
+
+/* positionnement bouton border/fill */
+.choice {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* boutons border/fill */
+.choice button {
+  margin-top: 5px;
+  background: #ece8e8;
+  border: 1px solid #ece8e8;
+  cursor: pointer;
+}
+
+.choice button:hover{
+  border: 1px solid black;
+}
+
+.choice .button_border_active{
+  border: 1px solid black;
+}
+
+.choice button {
+  width: 50px;
+}
+
+.color_stroke_fill{
+  display: flex;
+  justify-content: space-around;
+}
+
+#color_stroke,
+#color_fill{
+  border: 1px solid #00000026;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 5px;
+  border-radius: 30em;
+}
+
+/* alignement paragraphe shapes */
+.shapes {
+  background-color: #ece8e8;
+  text-align: center;
+  max-width: 140px;
+  margin-bottom: 0px;
+}
+
+/* espacement p de shape */
+.shapes p {
+  margin: 5px 0 0 0;
+  padding-top: 5%;
+  border-top: 2px solid #d8d7d7;
+}
+
+/* boutons avec formes */
+#rectangle:before {
+  content: "\25AD";
+}
+#carre:before {
+  content: "\25FB";
+}
+#triangle:before {
+  content: "\25B3";
+}
+#gomme:before {
+  content: "\2326";
+}
+
+/* Ne fonctionne plus ? */
+
+#dessin:before {
+  content:"\270E";
+}
+#cercle:before {
+  content:"\25EF";
+}
+#ellipse:before {
+    content:"\2B2D";
+} 
+
+#modif_stroke:before {
+  content: "\2B1A";
+}
+#modif_fill:before {
+  content: "\2BC0";
+}
+#haut:before {
+  content: "\2191";
+}
+#bas:before {
+  content: "\2193";
+}
+#gauche:before {
+  content: "\2190";
+}
+#droite:before {
+  content: "\2192";
+}
+
+
+/* alignement des boutons */
+.formes {
+  display: flex;
+  flex-wrap: wrap;
+}
+.autres {
+  flex-wrap: wrap;
+  display: flex;
+  padding-bottom: 7%;
+}
+
+/* boutons clear */
+#clear {
+  width: 128px;
+  margin: 10px 0 10px 5px;
+}
+
+
+/* tailles des boutons */
+.formes button {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-color: #ece8e8;
+  cursor: pointer;
+}
+
+.autres button {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-color: #ece8e8;
+  cursor: pointer;
+}
+
+/* hover bouttons */
+.formes button:hover {
+  border: 1px solid black;
+  background-color: #ece8e8;
+}
+
+.shapes .formes .button_border_active,
+.shapes .autres .button_border_active{
+  border: 1px solid black;
+}
+
+.autres button:hover {
+  border: 1px solid black;
+  background-color: #ece8e8;
+}
+
+/* taille boutons */
+.download_buttons button {
+  width: 40px;
+}
+
+/* espacement entre les boutons */
+.formes button {
+  margin-top: 10px;
+}
+.autres button {
+  margin-top: 5px;
+}
+.download_buttons button {
+  margin-top: 10px;
+}
+
+/* 
+.clear #clear {
+  margin-left: 5px;
+}
+ */
+
+.download_buttons button {
+  width: 50px;
+  margin-left: 11.5px;
+}

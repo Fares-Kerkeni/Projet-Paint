@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+
+
+/* zone blanche au dessus du titre : */
+h1 {
+  margin-top: 20px;
+}
+
+/* taille de la zone outils + zone dessin */
+main {
+  min-width: 800px;
+  max-width: 800px;
+  border: 1px solid #d8d7d7;
+  margin: 0 auto;
+  display: flex;
+  flex-grow: 1;
+  min-height: 700px;
+  max-height: 700px;
+  margin-bottom: 50px; /*zone blanche sous la zone outils/dessin */
+  margin-top: 20px; /* espacement avec le titre */
+}
+
+
+/* taille du bloc gauche */
+.left-block {
+  min-width: 140px;
+  max-width: 140px;
+  border-right: 1px solid #d8d7d7;
+  min-height: 698px;
+  max-height: 698px;
+  background-color: #ece8e8;
+}
+
+/* taille des div outils */
+.colors {
+  min-width: 140px;
+  max-width: 140px;
+}
+.shapes {
+  border-bottom: 2px solid #d8d7d7;
+  padding-bottom: 1px;
+}
+.formes {
+  min-width: 140px;
+  max-width: 140px;
+}
+.button {
+  min-width: 140px;
+  max-width: 140px;
+}
+.autres {
+  min-width: 140px;
+  max-width: 140px;
+}
+.font {
+  border-bottom: 2px solid #d8d7d7;
+  cursor: pointer;
+  padding:10px;
+  font-size: 13px;
+}
+
+#tab{
+  text-align: center;
+  border: 1px solid #ece8e8;
+  cursor: pointer;
+}
+#tab:hover{
+  border: 1px solid black;
+}
+
+
+/* polices d'écriture : */
+.fonts{
+  border: 1px solid #ece8e8;
+}
+
+.fonts:hover{
+  border-bottom: 1px solid black;
+}
+
+#choix_polices{
+  text-align: center;
+  display: none;
+}
+.font #choix_polices .button_border_active{
+  border-bottom: 1px solid black;
+}
+
+/* taille div save + boutons de la div*/
+.save {
+  border-bottom: 2px solid #d8d7d7;
+  padding-bottom: 1px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.save button{
+  width: 128px;
+  padding-left: 0px;
+  margin: 10px 0 10px 5px;
+}
+
+.modal_save_recup{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  background: rgba(0,0,0,0.3);
+  display: none; 
+}
+
+.modal_save_recup .close_modal{
+  position:absolute;
+  top:15px;
+  right:25px;
+  color:black;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+}
+
+form{
+  position: relative;
+  padding:50px;
+  background: white;
+}
+
+form span{
+  display: block;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+form input,
+form label{
+  display: block;
+}
+
+form input{
+  margin-bottom: 35px;
+  margin-top: 5px;
+  width:200px;
+}
+
+form input[type=submit]{
+  padding: 0 10px;
+  width:auto;
+}
+
+form input:last-child{
+  margin-bottom: 0px;
+}
+
+/* modifier la taille de la zone de dessin (div qui contient le canva)
+et taille de base/taille min/max */
+.right-block {
+  border: 1px solid #000000;
+  overflow: hidden;
+  resize: both;
+
+  height: 460px;
+  width: 660px
+  ;
+
+  min-height: 200px;
+  max-height: 700px;
+
+  min-width: 300px;
+  max-width: 660px;
+}
